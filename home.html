@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link href="//fonts.googleapis.com/css?family=Glegoo:400,700" rel="stylesheet" type="text/css"> -->
+  <!-- <link
+    href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+    rel="stylesheet" type="text/css"> -->
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="lib/owl-carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owl-carousel/assets/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top mt-4">
+      <div class="logo col-md-2">
+        <img src="img/mainlogo.png" alt="">
+      </div>
+
+      <div class="search-box col-md-4  mt-3">
+        <form>
+          <div class="form-group">
+            <input type="text" class="search-product" placeholder="Axtarin">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </form>
+      </div>
+      <div class="add-basket col-md-4">
+      <a href="logReg.html"><span class="login"><i style="color: red;" class="fas fa-sign-in-alt"></i> Daxil ol</span></a>
+        <span class="basket" data-toggle="modal" data-target="#cartModal"><i style="color: darkgreen;" class="fas fa-cart-plus"></i> Sebet <!-- <sup>0</sup>--></span></span>
+        
+        
+      </div>
+
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg mt-3">
+      <div class="container">
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupportedContent"
+          aria-controls="navSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color: white;"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Ana sehife <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Mobil Telefonlar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="gooogle.com">Apple</a>
+                <a class="dropdown-item" href="#">Xiaomi </a>
+                <a class="dropdown-item" href="#">Samsung</a>
+                <a class="dropdown-item" href="#">Meizu</a>
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Planşet
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Apple</a>
+                <a class="dropdown-item" href="#">Winteks </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Komputer Texnikasi
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Smart Saat</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Aksesuarlar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ev və Ofis Aksesuarları</a>
+                <a class="dropdown-item" href="#">Avtomobil Aksesuarları</a>
+                <a class="dropdown-item" href="#">Telefon qabları</a>
+                <a class="dropdown-item" href="#">Ekran qoruyucuları</a>
+                <a class="dropdown-item" href="#">Qulaqcıqlar </a>
+                <a class="dropdown-item" href="#">Adapter/USB</a>
+                <a class="dropdown-item" href="#">Speakerlər</a>
+                <a class="dropdown-item" href="#">Komputer Aksesuarları</a>
+                <a class="dropdown-item" href="#">Powerbanklar</a>
+
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Elaqe</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Modal -->
+
+    
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Sizin Kartınız
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-image">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Məhsul</th>
+                  <th scope="col">Qiymət</th>
+                  <th scope="col">Say</th>
+                  <th scope="col">Cəm Qiymət</th>
+                  <th scope="col">Əməliyyat</th>
+                </tr>
+              </thead>
+              <tbody id="productList">
+                <tr>
+                  <td class="w-25">
+                    <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png" class="img-fluid img-thumbnail" alt="Sheep">
+                  </td>
+                  <td>Vans Sk8-Hi MTE Shoes</td>
+                  <td>89$</td>
+                  <td class="qty"><input type="text" class="form-control" id="input1" value="1"></td>
+                  <td>178$</td>
+                  <td>
+                    <a href="#" class="btn btn-danger btn-sm">
+                      <i class="fa fa-times"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+            <div class="d-flex justify-content-end">
+              <h5>Cəm: <span class="price text-success">89$</span></h5>
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+            <button type="button" class="btn btn-success">Almaq ucun klikle</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  <main id="main">
+    <section id="slider ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel">
+              <div class="item">
+                <img src="img/2.webp" class="slider-img" alt="">
+
+                <span class="left">
+                  <i class="fas fa-arrow-circle-left arrow"></i>
+                </span>
+
+                <span class="right">
+                  <i class="fas fa-arrow-circle-right arrow"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="card border-0 col-md-3">
+            <img class="card-img-top" src="img/1B.png" alt="Çatdırılma">
+            <div class="card-body">
+              <a href="#">Çatdırılma</a>
+              <p class="card-text lead">Sürətli çatdırılma</p>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-3">
+            <img class="card-img-top" src="img/2B.png" alt="Çatdırılma">
+            <div class="card-body">
+              <a style="margin-left: 12px;" href="#">Zəmanət</a>
+              <p class="card-text lead">Original zəmanət</p>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-3">
+            <img class="card-img-top" src="img/3B.png" alt="Çatdırılma">
+            <div class="card-body">
+              <a href="#">Onlayn Ödəniş</a>
+              <p class="card-text lead">Təhlükəsiz şəkildə ödəniş imkanı</p>
+            </div>
+          </div>
+
+          <div class="card border-0 col-md-3">
+            <img class="card-img-top" src="img/4B.png" alt="Çatdırılma">
+            <div class="card-body">
+              <a href="#">Geri qaytarılma</a>
+              <p class="card-text lead">14 gün ərzində geri qaytarılma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product-part" class="product-part mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="product-tab">
+              <ul class="tab-list">
+                <li class="active">
+                  <button class="btn btn-outline-success btn-sm">
+                    <span>Mobil Telefonlar</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="btn btn-outline-success btn-sm">
+                    <span>Aksesuarlar</span>
+                  </button>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="box-product">
+            <div class="col-lg-3 col-md-3 " data-id>
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+                  <span class="new-item">Yeni</span>
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn-outline-primary btn" onclick="addToCart()">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class=" add-to-cart btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                      <a href="#" target="_blank">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+
+              <div class="product-box">
+                <div class="imagebox">
+                  <span class="item-sale">
+                    -30 &nbsp; M <br>
+                    <a> Nağd alış</a>
+                  </span>
+
+
+                  <span class="new-item">Yeni</span>
+
+                  <ul class="box-image">
+                    <li><a href="#" target="_blank"><img src=" img/redmi 8.jpg" alt=""></a>
+                    </li>
+                  </ul>
+
+                  <div class="box-content">
+                    <div class="category-name">
+                      <a href="#" target="_blank">Mobil Telefonlar</a>
+                    </div>
+
+                    <div class="product-name">
+                       <a href="#" target="_blank"  class="proc-name" data-name="Xiaomi Redmi Not 8-64GB">Xiaomi Redmi Not 8-64GB</a>
+                    </div>
+
+                    <div class="price">
+                      <span class="sale" data-price="520" >520</span>
+                      <span class="manat">M </span>
+
+                    </div>
+
+                    <div class="add-to-card">
+                      <button type="button" class="add-to-cart btn btn-outline-primary btn">
+                        <img src=" img/add-cart.png" alt="">
+                        Səbətə əlavə et
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div> 
+          
+          </div>
+
+        </div>
+      </div>
+
+      <div class="load-product">
+        <button class="more btn btn-outline-success btn-sm" id="btnMore">Daha Çox</button>
+
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="partners mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="section-header single">
+            <h1>Partnyorlar</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners-carousel">
+        <div class="owl-carousel owl-theme owl-loaded">
+
+          <div class="item">
+            <img src="img/Bosh.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Husaewei.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Foriella.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Acer.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Meizu.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Sony.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Sonorus.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Delongi.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/2.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Hansa.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/hp.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/KArcher.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Kenwood.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Panasonic.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/Remington.png" alt="">
+          </div>
+          <div class="item">
+            <img src="img/adona.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer mt-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="links">
+            <ul class="footer-category">
+              <li>Kateqoriyalar</li>
+              <li><a href="#">Mobil Telefonlar</a></li>
+              <li><a href="#">Planşet</a></li>
+              <li><a href="#">Smart saat</a></li>
+              <li><a href="#">Aksesuarlar</a></li>
+              <li><a href="#">Komputer texnikası</a></li>
+
+            </ul>
+            <ul class="useful">
+              <li>Faydalı keçidlər</li>
+              <li><a href="#">Çatdırılma</a></li>
+              <li><a href="#">Zəmanət</a></li>
+              <li><a href="#">Onlayn ödəmə</a></li>
+              <li><a href="#">Geri qaytarılma</a></li>
+              <li><a href="#">Haqqımızda</a></li>
+
+
+            </ul>
+            <ul class="other">
+              <li>Digər keçidlər</li>
+              <li><a href="#">Karyera</a></li>
+              <li><a href="#">Korporativ satış</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="clearfix col-md-4 ">
+          <div class="widget-content">
+            <div class="icon">
+              <img src="img/call.png" alt="">
+            </div>
+            <div class="info">
+              <p class="questions">Sualınız var?</p>
+              <p class="phone">
+                "Indi zəng et:"
+                <a href="tel:*0000">*0000</a>
+              </p>
+              <p class="adress">
+                Sumqayıt, İnşaatçılar qəs..
+              </p>
+            </div>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/Facebook-color.svg" alt="watch in facebook">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/Instagram-color.svg" alt="watch in instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a87698a19e.js" crossorigin="anonymous"></script>
+  <script src="lib/owl-carousel/jquery.min.js"></script>
+  <script src="lib/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/main.js" async></script>
+
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

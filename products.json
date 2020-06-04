@@ -1,0 +1,90 @@
+[
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"1",
+        "productName":"Xiaomi Redmi-64GB",
+        "price":"520",
+        "discount":"30",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+    },
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"2",
+        "productName":"Xiaomi Redmi Not 8T-64GB",
+        "price":"320",
+        "discount":"20",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+    },
+
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"3",
+        "productName":"Xiaomi Redmi Not 10-64GB",
+        "price":"600",
+        "discount":"30",
+        "situation":"Yeni",
+        "image":"img/redmi8.jpg"
+
+    },
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"4",
+        "productName":"Iphone XS",
+        "price":"1200",
+        "discount":"30",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+
+    },
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"5",
+        "productName":"Iphone 11",
+        "price":"1800",
+        "discount":"120",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+
+    },
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"6",
+        "productName":"Iphone 10",
+        "price":"1500",
+        "discount":"60",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+
+    },
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"7",
+        "productName":"Samsung S10",
+        "price":"1430",
+        "discount":"110",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+
+    },
+    {
+        "categoryId":"1",
+        "categoryName":"Mobil Telefonlar",
+        "id":"8",
+        "productName":"Huawei P30 pro",
+        "price":1620,
+        "discount":"160",
+        "situation":"Yeni",
+        "image":"img/redmi-not-8t.jpg"
+
+    }
+
+]
